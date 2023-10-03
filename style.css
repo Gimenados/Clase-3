@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&family=Inter:wght@200&family=Libre+Baskerville&family=Noto+Sans+Old+Permic&family=Orbitron&family=Roboto:ital,wght@1,300&display=swap');
+
 * {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Libre Baskerville', serif;
     overflow: visible;
 }
 
@@ -25,6 +27,17 @@ nav ul li a {
 
 h1 {
     margin: 0;
+    font-weight: 900 !important;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 15px;
 }
 
 section {
