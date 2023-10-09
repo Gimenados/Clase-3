@@ -1,0 +1,30 @@
+.nosotros-banner {
+    background-image: url(https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    width: 90vw;
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.nosotros-banner p {
+    background-color: #122816a1; 
+    color: white;
+    text-align: center;
+}
+
+section h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nosotros-banner h1 {
+    background-color: #122816a1;
+    font-size: 3rem;
+    color: #e6e6e6;
+    text-align: center;
+}
