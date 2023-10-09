@@ -1,11 +1,3 @@
-.d-flex {
-    display: flex;
-}
-
-.ml-1 {
-    margin-left: 15px;
-}
-
 .container-galery {
     display: flex;
     flex-wrap: wrap; /*hace un quiebre para que el contenido entre al achicar la pagina*/

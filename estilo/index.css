@@ -17,6 +17,7 @@ body {
     margin-top: 4rem; /*Margen que se da para poder visualizarlo*/
     box-sizing: content-box;
 }
+
 h1 {
     font-family: 'Pixelify Sans', cursive;
     margin: 0;
@@ -34,6 +35,21 @@ p {
     font-size: 0,5px;
 }
 
+a, li {
+    font-size: 1em;
+    font-weight: 400;
+}
+
 section {
     padding: 1rem 5%;
+}
+
+/*Helpers*/
+
+.d-flex {
+    display: flex;
+}
+
+.ml-1 {
+    margin-left: 15px;
 }

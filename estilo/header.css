@@ -10,10 +10,31 @@ nav ul li {
     margin: 0 1rem;
 }
 
-nav ul li a {
+/*nav ul li a {
     color: #7d6363;
     font-size: 1,5rem;
     text-decoration: none;
+}*/
+
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: rgb(14, 39, 79);
+    cursor: copy; 
+}
+
+a:visited {
+    color: rgb(143, 58, 173);
+    text-decoration: none;
+}
+
+a:active {
+    color: #fff;
 }
 
 header a h1 {
