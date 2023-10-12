@@ -1,0 +1,12 @@
+form {
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+input {
+    font-family: sans-serif;
+    padding: 0.25rem;
+    margin-top: 0,5rem;
+    display: block;
+    width: 15rem;
+}
