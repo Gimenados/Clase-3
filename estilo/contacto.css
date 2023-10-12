@@ -3,10 +3,15 @@ form {
     padding-top: 2rem;
 }
 
-input {
+input, textarea {
+    border-radius: 1.5rem solid black;
     font-family: sans-serif;
     padding: 0.25rem;
     margin-top: 0,5rem;
     display: block;
-    width: 15rem;
+    width: 20rem;
+}
+
+input {
+    height: 1.5rem;
 }
