@@ -35,15 +35,22 @@
         </nav>
     </header>
     <main>
-        <form action="codigo.php" method="get">
+        <form onsubmit="alert('Mensaje enviado correctamente')"> <!-- Boton para ejecutar tendencia de javascript al seleccionar el boton enviar-->
             <label for="name">Nombre y Apellido: </label>
-              <input id="name" type="text" name="name">
+              <input required id="name" type="text" name="name">
             <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="nombre@gmail.com">
+              <input required type="email" name="email" id="email" placeholder="nombre@gmail.com">
             <label for="subject">Asunto</label>
-              <input type="text" name="subject" id="subject" placeholder="Consulta sobre las imagenes ">
+              <input required type="text" name="subject" id="subject" placeholder="Consulta sobre las imagenes ">
             <label for="msg">Mensaje</label>
             <textarea name="msg" id="msg" cols="38" rows="10"></textarea> 
+            <div class="field-condition">
+              <input required type="checkbox" name="condition" id="condition">
+              <label for="condition">Acepto términos y condiciones</label>
+            </div>
+            <button type="submit">
+                Enviar
+            </button>
         </form>
     </main>
 </body>
