@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/index.css">
+    <link rel="stylesheet" href="../estilo/header.css">
+    <link rel="stylesheet" href="../estilo/home.css">
+    <link rel="stylesheet" href="../estilo/nosotros.css">
+    <link rel="stylesheet" href="../estilo/font.css">
+    <link rel="stylesheet" href="../estilo/contacto.css">
+    <link rel="stylesheet" href="../estilo/usuario.css">
+    <title>Crear Usuario</title>
+</head>
+<body>
+    <header  class="header-container">
+        <a style="text-decoration: none;" href="index.html"><h1>Crear Usuario</h1></a>
+         <nav>
+            <ul>
+                <li>
+                    <a href="https://www.educacionit.com/" target="_blank">Ir a Educacion IT</a>
+                </li>
+                <li>
+                    <a href="./pages/nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="../index.html#clientes">Nuestros Clientes</a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html">Contactanos</a>
+                </li> 
+                <li>
+                    <a href="tel:1143074596">Crear Usuario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form onsubmit="alert('Usuario creado correctamente')">
+        <label for="user" >Nombre del usuario</label>
+        <input type="text" id="user" name="user">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+        <label for="country">Pais</label>
+        <select name="" id="">
+            <option value="AR">Argentina</option>
+            <option value="CH">Chile</option>
+            <option value="Cl">Colombia</option>
+            <option value="EC" selected>Ecuador</option> <!--Que tenga por defauld Ecuador-->
+            <option value="PY">Paraguay</option>
+            <option value="UY">Uruguay</option>
+            <option value="VE">Venezuela</option>
+        </select>
+    <fieldset>
+        <legend>Selecciona el genero</legend>
+        <div class="field-gender">
+        <input type="radio" id="m" name="gender">
+        <label for=",">Masculino</label>
+        </div><div class="field-gender">
+        <input type="radio" id="f" name="gender">
+        <label for="f">Femenino</label>
+        </div>
+    </fieldset>
+    <label for="birthday">Fecha de nacimiento</label>
+     <input id="birthday" name="birthday" type="date" max="19/10/2023">
+     <label for="age">Edad</label>
+     <input id="age" name="age" type="number" min="1" max="100">
+     <button  type="submit" >Crear usuario</button>
+    </form>
+</body>
+</html>

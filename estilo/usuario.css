@@ -15,11 +15,12 @@ form button:hover {
     background-color: rgb(179, 76, 179);
 }
 
-input, textarea {
-    border-radius: 1.5rem solid black;
+input, textarea, select {
+    border-radius: 1.5rem;
+    border: 1px solid black;
     font-family: sans-serif;
     padding: 0.25rem;
-    margin: 0.75rem;
+    margin: 0.75rem 0;
     display: block;
     width: 20rem;
 }
@@ -28,12 +29,16 @@ input {
     height: 1.5rem;
 }
 
-input[type="checkbox"] {  /*Es condicional para los input*/
-    height: 1.5rem; /*Para que le de el espacio pequeño*/
-    width: 1.5rem;
+fieldset {
+    width: 20rem;
 }
 
-.field-condition {
+.field-gender {
     display: flex;
     align-items: center;
+}
+
+input[type="radio"] {  /*Es condicional para los input*/
+    height: 1.5rem; /*Para que le de el espacio pequeño*/
+    width: 1.5rem;
 }
