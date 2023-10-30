@@ -1,0 +1,68 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: cadetblue;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 2rem;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 2rem;
+}
+
+header nav ul li a {
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+audio {
+    background-color: beige;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: yellow;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/*tr {
+    background-color: coral;  pisa el th y td
+}*/
+
+.row-rosybrown {
+    background-color: rosybrown;
+}
+
+.row-grey {
+    background-color: grey;
+}

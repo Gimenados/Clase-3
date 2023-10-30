@@ -1,6 +1,18 @@
 form {
-    margin: 2rem;
+    /*margin: 2rem;*/
     padding-top: 2rem;
+    width: 25%;
+}
+@media (min-width: 470px) and (max-width: 1000px){ /*quiero que pase cuando el ancho max sea el 1000px*/
+     form {
+        width: 75% !important;
+ }
+}
+
+@media (max-width: 470px){
+    form {
+        width: 100%;
+    }
 }
 
 form button {
@@ -21,7 +33,7 @@ input, textarea {
     padding: 0.25rem;
     margin: 0.75rem;
     display: block;
-    width: 20rem;
+    width: 12rem;
 }
 
 input {
@@ -30,7 +42,7 @@ input {
 
 input[type="checkbox"] {  /*Es condicional para los input*/
     height: 1.5rem; /*Para que le de el espacio pequeño*/
-    width: 1.5rem;
+    width: 1rem;
 }
 
 .field-condition {

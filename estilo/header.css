@@ -2,7 +2,21 @@ nav ul {
     list-style-type: none;
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: end;
 }
+
+.sub-menu {
+    margin-top: 80px;
+    display: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.467);
+}
+
+/*@media (min-width:1400px) {
+    nav ul {
+        display: none;
+    }
+}*/
 
 nav ul li {
     /*margin-left: 16px;
@@ -28,6 +42,18 @@ a:hover {
     cursor: copy; 
 }
 
+@media (max-width: 1400px) {
+     header a nav ul {
+        font-size: 12px
+    }
+    .sub-menu {
+        display: block;
+    }
+    .sub-menu nav ul {
+        justify-content: start; /*Quiero q se pongan a la izquierda cada vez q van desapareciendo*/
+    }
+}
+
 a:visited {
     color: rgb(143, 58, 173);
     text-decoration: none;
@@ -44,6 +70,7 @@ header a h1 {
 .header-container {
     align-items: center;
     display: flex;
+    min-height: 40px;
     justify-content: space-between;
     padding: 8px;
     border-bottom: 1px solid black;

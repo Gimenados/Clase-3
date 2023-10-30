@@ -10,3 +10,10 @@
     margin: 2px;
     border: 2px solid #000000eb;
 }
+
+@media (max-width: 700px) {
+    .img1 {
+        order: 6;
+    }
+}
+
