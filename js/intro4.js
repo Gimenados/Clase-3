@@ -15,7 +15,7 @@
 
 
 const carsQuantity = 50;
-const peopleByCar = 1; 
+const peopleByCar = 5; 
 
 for (let i = 0; i < carsQuantity; i++) { // Declaro el ciclo for
     const car = "Auto #";  //Variable car
