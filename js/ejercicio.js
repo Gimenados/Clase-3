@@ -25,9 +25,9 @@ let suma = 0;
 let index;
 for (index = 0;index < array.length; index++) {
     console.log(`elemento #${index+1}: ${array[index]}`);
-    suma += array[index];   
+    suma = suma + array[index];
 }
 
-console.log(`dividendo : ${suma}`);
+console.log(`dividendo: ${suma}`);
 console.log(`divisor: ${index}`);
-console.log("el promedio es: ",suma/(index+1));
+console.log("el promedio es: ",suma/(array.length));
