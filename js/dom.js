@@ -20,6 +20,8 @@
 //    innerTecx: "contenido de texto",
 //}
 
+//FUNCIONES
+
 //Funcion suma
 //aisla una porcion de codigo que sea de mi utilidad y que se repita varias veces 
 
@@ -36,7 +38,7 @@
 //Ejemplo del desafio 5 con funciones
 
 
-function modulo (a, b) {
+function modulo (a, b) { //Funcinoes con parametro 
     return a % b;
 }
 function catConcat (stg, emoji) {
@@ -77,8 +79,9 @@ const f = x => {
 
 const f2 = x => 2 * x + 1;
 
-const f3 = (x, y) => 2 * x * y;
+ const f3 = (x, y) => 2 * x * y;
 
-//CHILDREN para acceder a los elemnos hijos
-// A
+//CHILDREN para acceder a los elementos hijos
+
+
 
