@@ -1,0 +1,77 @@
+@charset "UTF-8";
+html {
+  font-size: 16px;
+}
+
+h1 {
+  color: rgb(54, 177, 54);
+  margin-left: 40px;
+}
+
+.main {
+  margin-bottom: 2rem;
+}
+.main .btn {
+  font-size: 1.5rem;
+}
+.main .btn.btn-primary {
+  border-color: rgb(54, 177, 54);
+  color: rgb(54, 177, 54);
+  background-color: #edf9ed;
+}
+.main .btn.btn-primary:hover {
+  border-color: #edf9ed;
+  color: #edf9ed;
+  background-color: rgb(54, 177, 54);
+}
+.main .btn.btn-secondary {
+  border-color: rgb(54, 99, 177);
+  color: rgb(54, 99, 177);
+  background-color: #edf1f9;
+}
+.main .btn.btn-secondary:hover {
+  border-color: #edf1f9;
+  color: #edf1f9;
+  background-color: rgb(54, 99, 177);
+}
+.main .btn:not(.btn-primary) {
+  border-radius: 1.25rem;
+}
+.main p {
+  color: #1e631e;
+  font-size: 2rem;
+}
+
+.box-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-container .box {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  background-color: rgb(54, 177, 54);
+}
+.box-container .box::before, .box-container .box::after {
+  position: absolute;
+  font-size: 4rem;
+  top: calc(50% - 2rem);
+}
+.box-container .box::before {
+  content: "💪";
+  left: -4rem;
+}
+.box-container .box::after {
+  content: "🤚";
+  right: -4rem;
+}
+.box-container::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1rem dotted rgb(54, 177, 54);
+  bottom: -2rem;
+  width: 50%;
+}/*# sourceMappingURL=index.css.map */
