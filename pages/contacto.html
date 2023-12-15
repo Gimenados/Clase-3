@@ -2,56 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilo/index.css">
-    <link rel="stylesheet" href="../estilo/header.css">
-    <link rel="stylesheet" href="../estilo/home.css">
-    <link rel="stylesheet" href="../estilo/nosotros.css">
-    <link rel="stylesheet" href="../estilo/font.css">
-    <link rel="stylesheet" href="../estilo/contacto.css">
-    <title>Contacto</title>
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/contactus.css">
 </head>
 <body>
-    <header  class="header-container">
-        <a style="text-decoration: none;" href="index.html"><h1>CONTACTANOS</h1></a>
-         <nav>
+    <header class="header-container">
+        <a href="../index.html">
+            <h1>Contactanos</h1>
+        </a>
+        <nav>
             <ul>
                 <li>
-                    <a href="https://www.educacionit.com/" target="_blank">Ir a Educacion IT</a>
+                    <a 
+                        href="https://www.educacionit.com/"
+                        href="#"
+                        title="Ir a página externa de educación IT"
+                        target="_blank"
+                    >
+                        Ir a educación IT
+                    </a>
                 </li>
                 <li>
-                    <a href="./pages/nosotros.html">Sobre Nosotros</a>
+                    <a href="./nosotros.html">Sobre nosotros</a>
                 </li>
                 <li>
                     <a href="../index.html#clientes">Nuestros Clientes</a>
                 </li>
                 <li>
-                    <a href="./contacto.html">Contactanos</a>
-                </li> 
+                    <a href="./contactus.html">Contactanos</a>
+                </li>
                 <li>
-                    <a href="tel:1143074596">Telefono</a>
+                    <a href="./create-user.html">Crear usuario</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <form onsubmit="alert('Mensaje enviado correctamente')"> <!-- Boton para ejecutar tendencia de javascript al seleccionar el boton enviar-->
-            <label for="name">Nombre y Apellido: </label>
-              <input required id="name" type="text" name="name">
-            <label for="email">Email</label>
-              <input required type="email" name="email" id="email" placeholder="nombre@gmail.com">
+    <div class="sub-menu">
+        <nav>
+            <ul>
+                <li>
+                    <a 
+                        href="https://www.educacionit.com/"
+                        href="#"
+                        title="Ir a página externa de educación IT"
+                        target="_blank"
+                    >
+                        Ir a educación IT
+                    </a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="../index.html#clientes">Nuestros Clientes</a>
+                </li>
+                <li>
+                    <a href="./contactus.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="./create-user.html">Crear usuario</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="form-container">
+        <form onsubmit="onSubmitContact()">
+            <label for="name">Nombre y apellido</label>
+            <input id="name" name="name" type="text" placeholder="Jose Perez" oninput="onChangeName()" required>
+            <!-- <p id="name-error" class="input-error" style="visibility: hidden;">Este campo solamente admite caracteres alfanumericos</p> -->
+            <p id="name-error" class="input-error"></p>
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="email@gmail.com" required>
             <label for="subject">Asunto</label>
-              <input required type="text" name="subject" id="subject" placeholder="Consulta sobre las imagenes ">
+            <input id="subject" name="subject" type="text" placeholder="Consulta sobre las imágenes">
             <label for="msg">Mensaje</label>
-            <textarea name="msg" id="msg" cols="38" rows="10"></textarea> 
-            <div class="field-condition">
-              <input required type="checkbox" name="condition" id="condition">
-              <label for="condition">Acepto términos y condiciones</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+            <div class="field-conditions">
+                <input id="conditions" name="conditions" type="checkbox" oninput="onChangeTyC()" required>
+                <label for="conditions">Acepto términos y condiciones</label>
             </div>
-            <button type="submit">
+            <button id="submitBtn" type="submit" disabled>
                 Enviar
             </button>
         </form>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>

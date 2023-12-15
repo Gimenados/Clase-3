@@ -1,51 +1,75 @@
 form {
-    /*margin: 2rem;*/
     padding-top: 2rem;
     width: 25%;
 }
-@media (min-width: 470px) and (max-width: 1000px){ /*quiero que pase cuando el ancho max sea el 1000px*/
-     form {
-        width: 75% !important;
- }
+
+@media (min-width: 470px) and (max-width: 1000px) {
+    form {
+        width: 50%
+    }
 }
 
-@media (max-width: 470px){
+@media (max-width: 470px) {
     form {
         width: 100%;
     }
 }
 
 form button {
-    width: 15rem;
-    background-color: rgb(236, 133, 238);
-    color: black;
+    background-color: rgb(87, 7, 162);
+    border: none;
+    border-radius: 1.5rem;
+    color: rgb(210, 194, 225);
     padding: 0.5rem;
+    width: 100%;
 }
 
 form button:hover {
-    color:  rgb(236, 133, 238);
-    background-color: rgb(179, 76, 179);
+    color: rgb(87, 7, 162);
+    background-color: rgb(210, 194, 225);
+}
+
+form button:disabled {
+    color: #000;
+    background-color: #DDD;
 }
 
 input, textarea {
-    border-radius: 1.5rem solid black;
-    font-family: sans-serif;
-    padding: 0.25rem;
-    margin: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    border: 1px solid black;
     display: block;
-    width: 12rem;
+    font-family: sans-serif;
+    margin: 0.5rem 0;
+    padding: 1.25rem 0.25rem;
+    width: 100%
+    /* Evitar que el textarea cambie de tamaño */
+    /* resize: none; */
 }
 
 input {
     height: 1.5rem;
 }
 
-input[type="checkbox"] {  /*Es condicional para los input*/
-    height: 1.5rem; /*Para que le de el espacio pequeño*/
-    width: 1rem;
+input[type="checkbox"] {
+    width: 1.5rem;
 }
 
-.field-condition {
+.form-container {
+    padding: 2rem;
+}
+
+.field-conditions {
     display: flex;
     align-items: center;
+}
+
+.input-error {
+    color: red;
+    border-color: red;
+}
+
+p.input-error {
+    font-size: 0.75rem;
+    margin-top: 0;
 }
