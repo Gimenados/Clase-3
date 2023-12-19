@@ -1,9 +1,10 @@
-.box-container {
+
+.box__container {
     position: relative;
     width: 100%;
     @include center-children-box();
 
-    .box {
+    .box__item {
         $size: $font-size-xxl;
         position: relative;
         height: 10rem;
