@@ -1,0 +1,22 @@
+$color: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    error: $error-color,
+    success: $success-color,
+);
+
+//Value hace referecia a los valores, name a las propiedades y colores
+@each $name, $value in $colors {
+    .bg-#{$name} {
+        background-color: $value;
+    } //Estoy creando una llave concatenando
+    
+    .color-#{$name} {
+        color: $value;
+    }
+
+    .border-#{$name} {
+        border: 1px solid $value;
+    }
+
+}
